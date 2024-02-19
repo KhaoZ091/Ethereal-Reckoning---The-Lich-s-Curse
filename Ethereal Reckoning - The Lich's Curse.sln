@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ethereal Reckoning - The Lich's Curse", "Ethereal Reckoning - The Lich's Curse\Ethereal Reckoning - The Lich's Curse.csproj", "{EC8FEA50-6264-40C0-9A69-46CFBC264A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ethereal Reckoning - The Lich's Curse", "Ethereal Reckoning - The Lich's Curse\Ethereal Reckoning - The Lich's Curse.csproj", "{EC8FEA50-6264-40C0-9A69-46CFBC264A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Character Structure", "ClassLibrary1\Character Structure.csproj", "{D791BAED-3FE9-4BC3-9CB9-250BAEA858EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EC8FEA50-6264-40C0-9A69-46CFBC264A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC8FEA50-6264-40C0-9A69-46CFBC264A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC8FEA50-6264-40C0-9A69-46CFBC264A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D791BAED-3FE9-4BC3-9CB9-250BAEA858EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D791BAED-3FE9-4BC3-9CB9-250BAEA858EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D791BAED-3FE9-4BC3-9CB9-250BAEA858EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D791BAED-3FE9-4BC3-9CB9-250BAEA858EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
