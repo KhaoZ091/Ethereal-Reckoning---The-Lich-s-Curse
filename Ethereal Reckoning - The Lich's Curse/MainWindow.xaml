@@ -4,26 +4,19 @@
         xmlns:mc="http://shemas.openxmlformats.org/markup-compatibility/2006"
         Title="Ethereal Reckoning: The Lich's Curse" Height="768" Width="1024">
     <Grid RenderTransformOrigin="0.5,0.5" Margin="0,1,-100,-57">
-        <Grid.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform/>
-                <SkewTransform/>
-                <RotateTransform Angle="0.657"/>
-                <TranslateTransform/>
-            </TransformGroup>
-        </Grid.RenderTransform>
+        
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="250" />
+            <RowDefinition Height="500" />
+            <RowDefinition Height="225" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250" />
             <ColumnDefinition Width="524" />
             <ColumnDefinition Width="250" />
         </Grid.ColumnDefinitions>
-
+        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Grid.ColumnSpan="3" Background="#434b55" Foreground="White"/>
         <!-- Area of Player Info -->
         <Grid Grid.Row="1" Grid.Column="0">
 
@@ -75,27 +68,74 @@
                 <Label Grid.Row="9" Grid.Column="1" Background="#22272e" Foreground="White"/>
 
             </Grid>
-            <Label Grid.Row="1" Grid.Column="0" Content="Character Image:" Background="#2d333b" Foreground="White"/>
+        <!-- Character Images -->
+            <Label Grid.Row="1" Grid.Column="0" Content="Character Image:" Background="#2d333b" Foreground="White" Margin="0,0,0,50"/>
             <Grid Grid.Row="1" Grid.Column="0">
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="25"/>
-                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="225"/>
                 </Grid.RowDefinitions>
                 <Label Grid.Row="1" Grid.Column="1" Background="#22272e" Foreground="White"/>
 
             </Grid>
         </Grid>
+        <!-- Character Equipment -->
+        <Label Grid.Row="2" Grid.Column="0" Content="Character Equipments" Background="#2d333b" Foreground="White"/>
+            <Grid Grid.Row="2" Grid.Column="0">
 
-        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Grid.ColumnSpan="3"/>
-
-        <Label Grid.Row="2" Grid.Column="0" Content="Character Equipments"/>
-        <Label Grid.Row="1" Grid.Column="1" Content="Narration"/>
-        <Label Grid.Row="2" Grid.Column="1" Content="Commands:"/>
-        <Grid Grid.Row="1" Grid.Column="2">
-            <Label Grid.Row="1" Grid.Column="2" Content="Map"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="225"/>
+                </Grid.RowDefinitions>
+            <Label Grid.Row="1" Grid.Column="1" Background="#22272e" Foreground="White"/>
         </Grid>
-        <Label Grid.Row="2" Grid.Column="2" Content="Navigation"/>
+
+        <!-- Narration -->
+        <Label Grid.Row="1" Grid.Column="1" Content="Narration" Background="#2d333b" Foreground="White"/>
+        <Grid Grid.Row="1" Grid.Column="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="475"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" Grid.Column="1" Background="#22272e" Foreground="White"/>
+        </Grid>
+
+        <!-- Command -->
+        <Label Grid.Row="2" Grid.Column="1" Content="Commands:" Background="#2d333b" Foreground="White"/>
+        <Grid Grid.Row="2" Grid.Column="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="475"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" Grid.Column="1" Background="#22272e" Foreground="White"/>
+        </Grid>
+
+        <!-- Map -->
+        <Label Grid.Row="1" Grid.Column="2" Content="Map" Background="#2d333b" Foreground="White"/>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="225"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="225"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" Grid.Column="1" Background="#22272e" Foreground="White"/>
+            <Label Grid.Row="2" Grid.Column="1" Content="Entity Image" Background="#2d333b" Foreground="White"/>
+            <Label Grid.Row="3" Grid.Column="1" Background="#22272e" Foreground="White"/>
+        </Grid>
+
+        <!-- Navigation -->
+        <Label Grid.Row="2" Grid.Column="2" Content="Navigation" Background="#2d333b" Foreground="White"/>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="225"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="1" Grid.Column="1" Background="#22272e" Foreground="White"/>
+        </Grid>
     </Grid>
 
 </Window>
